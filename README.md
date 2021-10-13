@@ -1,6 +1,6 @@
 
 # user-app
-Display users from an API [API](https://randomuser.me/)
+Display users from an [API](https://randomuser.me/)
 
 
 Build with 
