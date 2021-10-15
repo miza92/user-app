@@ -1,45 +1,40 @@
-import React from 'react';
-import { Segment, Container, Grid, List, Header } from 'semantic-ui-react';
+import React from "react";
+import { Segment, Container, Grid, List, Header } from "semantic-ui-react";
 
-
-const Footer = () =>{ 
-
+const Footer = () => {
   return (
-    <div>
-      <Segment inverted vertical style={{ position:'absolute', width:'100%',}}>
+    <div className={"Footer"}>
+       <Segment inverted vertical style={{ padding: '5em 0em' }}>
         <Container>
           <Grid divided inverted stackable>
             <Grid.Row>
               <Grid.Column width={3}>
-                <Header inverted as='h4' content='About' />
+                <Header inverted as={"h4"} content={"About"} />
                 <List link inverted>
-                  <List.Item as='a'>Sitemap</List.Item>
-                  <List.Item as='a'>Contact Us</List.Item>
-                  <List.Item as='a'>Religious Ceremonies</List.Item>
-                  <List.Item as='a'>Gazebo Plans</List.Item>
+                  <List.Item as={"a"}>Sitemap</List.Item>
+                  <List.Item as={"a"}>Contact Us</List.Item>
                 </List>
               </Grid.Column>
               <Grid.Column width={3}>
-                <Header inverted as='h4' content='Services' />
+                <Header inverted as={"h4"} content={"Services"} />
                 <List link inverted>
-                  <List.Item as='a'>Banana Pre-Order</List.Item>
-                  <List.Item as='a'>DNA FAQ</List.Item>
-                  <List.Item as='a'>How To Access</List.Item>
-                  <List.Item as='a'>Favorite X-Men</List.Item>
+                  <List.Item as={"a"}>RANDOM USER GENERATOR</List.Item>
+                  <List.Item as={"a"}>DNA FAQ</List.Item>
                 </List>
               </Grid.Column>
               <Grid.Column width={7}>
-                <Header as='h4' inverted>
-                  Footer Header
+                <Header as={"h4"} inverted>
+                  Footer 
                 </Header>
                 <p>
-                  Extra space for a call to action inside the footer that could help re-engage users.
+                  Extra space for a call to action inside the footer that could
+                  help re-engage users.
                 </p>
               </Grid.Column>
             </Grid.Row>
           </Grid>
         </Container>
-      </Segment>
+        </Segment>
     </div>
   );
 };

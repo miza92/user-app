@@ -1,9 +1,59 @@
-.App {
-  text-align: center;
-}
-
 body {
-  background-color: #F3F7F9;
+  background-color: #f2f2f2;
 }
 
+.Header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30pdeex;
+  height: 80vh;
+  background-repeat: no-repeat;
+  font-family: 'Overpass', sans-serif;
+}
 
+.Titre{
+  font-family: 'Overpass', sans-serif;
+  font-size: 2em;
+}
+
+.Body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.Carousel-head{
+  padding: 6em 0em;
+}
+.Top{
+  position: fixed; 
+   width: 100%;
+   left: 50%;
+   bottom: 40px;
+   height: 20px;
+   font-size: 3rem;
+   z-index: 1;
+   cursor: pointer;
+   color: green;
+}
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  .Carousel-head{
+    width: 450px;
+  }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  .Carousel-head{
+    padding: 8em 0em;
+    width: 300px;
+  }
+  .Titre{
+    font-size: 1em;
+  }
+}

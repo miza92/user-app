@@ -1,19 +1,21 @@
-import React from 'react';
-import { Segment, Container, Header } from 'semantic-ui-react';
+import React from "react";
+import { Grid } from "semantic-ui-react";
+import MyCarousel from "./Carousel";
 
-const Head = () =>{ 
+const Head = () => {
   return (
-    <div>
-      <Segment inverted textAlign='center' style={{ minHeight: 700, padding: '1em 0em' }} vertical >
-        <Container text>
-          <Header as='h1'content='RANDOM USER GENERATOR' inverted 
-            style={{ fontSize: '4em', fontWeight: 'normal', marginBottom: 0, marginTop:  '3em', }}
-          />
-          <Header as='h2' content='Get Started' inverted 
-            style={{ fontSize: '1.7em', fontWeight: 'normal', marginTop: '1.5em', }}
-          />
-        </Container>
-      </Segment>
+    <div className={"Header"}>
+      <Grid divided={'vertically'} stackable>
+        <Grid.Row columns={2}>
+          <Grid.Column>
+            <MyCarousel />
+          </Grid.Column>
+          <Grid.Column style={{ padding: "20em 0em" }}>
+            <h3 className={"Titre"}> RANDOM USER GENERATOR</h3>
+            <h4 className={"Titre"}>Get Started</h4>
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
     </div>
   );
 };
