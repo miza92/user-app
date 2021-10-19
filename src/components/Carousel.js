@@ -11,9 +11,9 @@ const MyCarousel =()=> {
             <div>
                 <img src="assets/the-telecom-industry-featured.jpg" style={{borderRadius: '10px'}} alt={"the-telecom-industry-featured"}/>
             </div>
-            <div>
+            {/* <div>
                 <img src="assets/giphy.webp" style={{width:"400px", borderRadius: '10px'}} alt={"wonder woman"}/>
-            </div>
+            </div> */}
             <div>
                 <img src="assets/GXI-telecom.jpg"style={{borderRadius: '10px'}} alt={"GXI-telecom"}/>
             </div>
